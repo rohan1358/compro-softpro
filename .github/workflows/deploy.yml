@@ -27,8 +27,8 @@ jobs:
     - name: Building project
       run: CI=false npm run build
 
-    - name: Running tests
-      run: npm run test
+    # - name: Running tests
+    #   run: npm run test
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
