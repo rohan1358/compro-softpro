@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.aftar-tablecontent {
+  width: 100%;
+  position: absolute;
+  top: 240%;
+}
+.logo {
+  position: absolute;
+  top: 20vw;
+  width: 30%;
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 750px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 230%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 220%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 210%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 200%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 190%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 180%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 170%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 160%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 150%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 140%;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .aftar-tablecontent {
+    width: 100%;
+    position: absolute;
+    top: 130%;
+  }
+}
+
+.globe {
+  animation: rotate 10s linear infinite; /* 4s adalah durasi rotasi, sesuaikan sesuai kebutuhan Anda */
+  min-width: 250px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
