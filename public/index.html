@@ -25,19 +25,1306 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TK56FJ9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta
+      name="google-site-verification"
+      content="1mNwUoDENQGYXkJSU2qU_yiwqmDosyhqEtGxi-boYd8"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <!-- SEO -->
+    <title>Burningroom Technology</title>
+    <link
+      rel="canonical"
+      href="https://burningroom.co.id/?gclid=CjwKCAjwjaWoBhAmEiwAXz8DBe_8VXorXTD1SQjz31gODPnlOH5AQxA_wnlIjKGmyqRlkolxYQHsChoCamMQAvD_BwE"
+    />
+    <meta name="author" content="CV Burningroom Technology" />
+    <meta
+      name="keywords"
+      content="burningroom, website, aplikasi, kiosk, teknologi, technology, burningroom technology, burningroom surabaya, software, software house, software house surabaya, "
+    />
+    <meta
+      name="description"
+      content="Burningroom Techonolgy adalah sebuah perusahaan yang bergerak dibidang jasa Social Media Management, Website Development, dan Application Development yang berada di kota Surabaya - Jawa Timur."
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/main/img/logo/icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://burningroom.co.id/?gclid=CjwKCAjwjaWoBhAmEiwAXz8DBe_8VXorXTD1SQjz31gODPnlOH5AQxA_wnlIjKGmyqRlkolxYQHsChoCamMQAvD_BwE"
+    />
+    <meta property="og:site_name" content="Burningroom Technology" />
+    <meta property="og:title" content="Burningroom Technology" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id" />
+    <meta
+      property="og:description"
+      content="Burningroom Techonolgy adalah sebuah perusahaan yang bergerak dibidang jasa Social Media Management, Website Development, dan Application Development yang berada di kota Surabaya - Jawa Timur."
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="/assets/main/img/logo/icon.png"
+    />
+    <meta property="og:image:url" content="/assets/main/img/logo/icon.png" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/main/img/logo/icon.png"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@burningroom" />
+    <meta name="twitter:title" content="Burningroom Technology" />
+    <meta
+      name="twitter:description"
+      content="Burningroom Techonolgy adalah sebuah perusahaan yang bergerak dibidang jasa Social Media Management, Website Development, dan Application Development yang berada di kota Surabaya - Jawa Timur."
+    />
+    <meta name="twitter:image" content="/assets/main/img/logo/icon.png" />
+    <meta name="twitter:creator" content="@burningroom" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--build:css-->
+    <link rel="stylesheet" href="/assets/main/css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <script
+      src="https://site-assets.fontawesome.com/releases/v6.0.0/js/all.js"
+      data-auto-add-css="false"
+      data-auto-replace-svg="false"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <!-- endbuild -->
+
+    <!--custom css start-->
+
+    <style>
+      .offcanvas-backdrop::before {
+        z-index: 600 !important;
+      }
+
+      .navbar-dark a.nav-link.active {
+        font-weight: bold;
+      }
+
+      .navbar-dark.sticky-header.affix .main-menu li a.nav-link.active {
+        color: var(--bs-primary);
+      }
+
+      :root {
+        color-scheme: light only !important;
+      }
+    </style>
+    <!--custom css end-->
+
+    <style>
+      .single-integration {
+        height: 100% !important;
+      }
+
+      .single-integration .img-fluid {
+        max-width: 50px !important;
+        max-height: 50px !important;
+      }
+
+      .title-erp {
+        font-size: 40px;
+      }
+
+      .row-erp {
+        height: 100vh;
+      }
+
+      .hero-content-wrap {
+        margin-top: 60px;
+      }
+
+      .konsul {
+        margin-left: 0 !important;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .title-erp {
+          font-size: 25px !important;
+        }
+
+        .desc-erp {
+          font-size: 14px !important;
+        }
+
+        .row-erp {
+          height: initial !important;
+        }
+
+        .hero-content-wrap {
+          margin-top: 100px;
+        }
+
+        .hero-img-wrap {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+
+        .konsul {
+          margin-left: 30px !important;
+        }
+      }
+    </style>
+    <!-- Livewire Styles -->
+    <style>
+      [wire\:loading],
+      [wire\:loading\.delay],
+      [wire\:loading\.inline-block],
+      [wire\:loading\.inline],
+      [wire\:loading\.block],
+      [wire\:loading\.flex],
+      [wire\:loading\.table],
+      [wire\:loading\.grid],
+      [wire\:loading\.inline-flex] {
+        display: none;
+      }
+
+      [wire\:loading\.delay\.shortest],
+      [wire\:loading\.delay\.shorter],
+      [wire\:loading\.delay\.short],
+      [wire\:loading\.delay\.long],
+      [wire\:loading\.delay\.longer],
+      [wire\:loading\.delay\.longest] {
+        display: none;
+      }
+
+      [wire\:offline] {
+        display: none;
+      }
+
+      [wire\:dirty]:not(textarea):not(input):not(select) {
+        display: none;
+      }
+
+      input:-webkit-autofill,
+      select:-webkit-autofill,
+      textarea:-webkit-autofill {
+        animation-duration: 50000s;
+        animation-name: livewireautofill;
+      }
+
+      @keyframes livewireautofill {
+        from {
+        }
+      }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "308194468502686");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=308194468502686&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TK56FJ9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--preloader start-->
+    <div id="preloader">
+      <div class="preloader-wrap">
+        <img
+          src="/asset/icon.png"
+          alt="logo"
+          class="img-fluid preloader-icon"
+        />
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+    <!--preloader end-->
+    <!--main content wrapper start-->
+    <div class="main-wrapper">
+      <header class="main-header position-absolute w-100" style="z-index: 999">
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-header">
+          <div
+            class="container d-flex align-items-center justify-content-lg-between position-relative"
+          >
+            <a
+              href="https://burningroom.co.id"
+              class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none"
+            >
+              <img
+                src="/asset/Logo_SP-removebg-preview-white.png"
+                alt="Logo_SP-removebg-preview"
+                class="img-fluid logo-white"
+                style="max-width: 150px"
+              />
+              <img
+                src="/asset/Logo_SP-removebg-preview.png"
+                alt="Logo_SP-removebg-preview"
+                class="img-fluid logo-color"
+                style="max-width: 150px"
+              />
+            </a>
+            <a
+              class="navbar-toggler position-absolute right-0 border-0"
+              href="#offcanvasWithBackdrop"
+              role="button"
+            >
+              <span
+                class="far fa-bars"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBackdrop"
+                aria-controls="offcanvasWithBackdrop"
+              ></span>
+            </a>
+            <div class="clearfix"></div>
+            <div class="collapse navbar-collapse justify-content-center">
+              <!-- <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+                    <li><a href="https://burningroom.co.id" class="nav-link text-primary active">BERANDA</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">LAYANAN</a>
+                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="display: none;">
+                            <div class="dropdown-grid rounded-custom width-half" style="width: 326px;">
+                                <div class="dropdown-grid-item">
+                                    
+                                    <a href="/product/aplikasi-erp-bisnis-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi ERP Bisnis</div>
+                                        </div>
+                                    </a>
+                                    <a href="/product/aplikasi-erp-medis-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi Medis</div>
+                                        </div>
+                                    </a>
+                                    <a href="/product/aplikasi-erp-akademik-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi Akademik</div>
+                                        </div>
+                                    </a>
+                                    <a href="/product/aplikasi-pemasaran-wisata-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi Pariwisata</div>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="https://burningroom.co.id/company" class="nav-link ">PERUSAHAAN</a></li>
+                    <li><a href="https://burningroom.co.id/contact" class="nav-link ">KONTAK</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">LAINNYA</a>
+                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="display: none;">
+                            <div class="dropdown-grid rounded-custom width-half">
+                                <div class="dropdown-grid-item">
+                                    <a href="/jobs" class="dropdown-link">
+                                        <div class="drop-title ">KARIR</div>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+            <div
+              class="action-btns text-end me-5 me-lg-0 d-none d-xl-block d-md-none d-lg-none"
+            >
+              <a
+                href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                class="btn btn-primary"
+                style="font-size: 14px"
+                target="_blank"
+                >Tanya Estimasi Biaya
+                <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
+              ></a>
+            </div>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasWithBackdrop"
+            >
+              <div class="offcanvas-header d-flex align-items-center mt-4">
+                <a
+                  href="https://burningroom.co.id"
+                  class="d-flex align-items-center mb-md-0 text-decoration-none"
+                >
+                  <img
+                    src="/assets/main/img/logo/BR-black.png"
+                    alt="logo"
+                    class="img-fluid w-50 ps-2"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="close-btn text-danger"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <i class="far fa-close"></i>
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="nav col-12 col-md-auto justify-content-center main-menu"
+                >
+                  <li>
+                    <a
+                      href="https://burningroom.co.id"
+                      class="nav-link text-primary active"
+                      >BERANDA</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      LAYANAN
+                    </a>
+                    <div
+                      class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
+                      data-bs-popper="none"
+                    >
+                      <div class="dropdown-grid rounded-custom width-half">
+                        <div class="dropdown-grid-item">
+                          <a
+                            href="/product/aplikasi-erp-bisnis-custom"
+                            class="dropdown-link"
+                          >
+                            <div class="dropdown-info">
+                              <div class="drop-title">
+                                Jasa Pembuatan Aplikasi ERP Bisnis
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            href="/product/aplikasi-erp-medis-custom"
+                            class="dropdown-link"
+                          >
+                            <div class="dropdown-info">
+                              <div class="drop-title">
+                                Jasa Pembuatan Aplikasi Medis
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            href="/product/aplikasi-erp-akademik-custom"
+                            class="dropdown-link"
+                          >
+                            <div class="dropdown-info">
+                              <div class="drop-title">
+                                Jasa Pembuatan Aplikasi Akademik
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            href="/product/aplikasi-pemasaran-wisata-custom"
+                            class="dropdown-link"
+                          >
+                            <div class="dropdown-info">
+                              <div class="drop-title">
+                                Jasa Pembuatan Aplikasi Pariwisata
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="https://burningroom.co.id/company" class="nav-link"
+                      >PERUSAHAAN</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="https://burningroom.co.id/contact" class="nav-link"
+                      >KONTAK</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      LAINNYA
+                    </a>
+                    <div
+                      class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
+                      data-bs-popper="none"
+                    >
+                      <div class="dropdown-grid rounded-custom width-half">
+                        <div class="dropdown-grid-item">
+                          <a href="/jobs" class="dropdown-link">
+                            <div class="dropdown-info">
+                              <div class="drop-title">Karir</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="action-btns mt-4 ps-3">
+                  <a
+                    href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                    class="btn btn-primary"
+                    style="font-size: 14px"
+                    target="_blank"
+                    >Tanya Estimasi Biaya
+                    <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div>
+        <section
+          class="hero-section text-white bg-gradient"
+          style="
+            background: url('/assets/main/img/hero-dot-bg.png') no-repeat center
+              right;
+          "
+        >
+          <div class="container">
+            <div
+              class="row d-flex justify-content-center text-center text-lg-start align-items-center row-erp"
+            >
+              <div class="col-lg-6 col-md-10 col-12">
+                <div class="hero-content-wrap">
+                  <h5 class="text-warning">-</h5>
+                  <h1 class="fw-bold display-5" data-aos="fade-up">
+                    About Company
+                  </h1>
+                  <p class="lead" data-aos="fade-up" style="font-size: 18px">
+                    SoftPro.One Solutions is an IT software house company that
+                    provides services, solutions, and innovative information
+                    technology products for small to large-scale applications
+                    and systems. By mastering many development tools such as
+                    web, mobile-based and desktop-based. We can provide an
+                    appropriate and integrated system and application solutions.
+                  </p>
+                  <div
+                    class="action-btns mt-4"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                  >
+                    <a
+                      href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                      class="btn btn-primary me-lg-3 me-sm-3"
+                      target="_blank"
+                      >Klik Untuk Tanya Estimasi Biaya
+                      <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
+                    ></a>
+                  </div>
+                  <ul class="nav subscribe-feature-list text-center mt-3">
+                    <li class="nav-item">
+                      <span class="konsul"
+                        ><i class="far fa-check-circle text-primary me-2"></i
+                        >Konsultasi Gratis</span
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <span
+                        ><i class="far fa-check-circle text-primary me-2"></i
+                        >Layanan 24 Jam</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-8 col-12">
+                <div
+                  class="hero-img-wrap position-relative app-screen-bg"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <ul
+                    class="position-absolute animate-element parallax-element circle-shape-list"
+                    style="
+                      transform: translate3d(0px, 0px, 0px);
+                      transform-style: preserve-3d;
+                      backface-visibility: hidden;
+                    "
+                  >
+                    <li
+                      class="layer"
+                      data-depth="0.02"
+                      style="
+                        position: absolute;
+                        display: block;
+                        left: 0px;
+                        top: 0px;
+                        transform: translate3d(-7.05563px, -0.543302px, 0px);
+                        transform-style: preserve-3d;
+                        backface-visibility: hidden;
+                      "
+                    >
+                      <img
+                        src="/assets/main/img/shape/circle-1.svg"
+                        alt="shape"
+                        class="circle-shape-item type-1 hero-1"
+                      />
+                    </li>
+                    <li
+                      class="layer"
+                      data-depth="0.04"
+                      style="
+                        position: absolute;
+                        display: block;
+                        left: 0px;
+                        top: 0px;
+                        transform: translate3d(-14.1113px, -1.0866px, 0px);
+                        transform-style: preserve-3d;
+                        backface-visibility: hidden;
+                      "
+                    >
+                      <img
+                        src="/assets/main/img/shape/circle-1.svg"
+                        alt="shape"
+                        class="circle-shape-item type-2 hero-1"
+                      />
+                    </li>
+                    <li
+                      class="layer"
+                      data-depth="0.04"
+                      style="
+                        position: absolute;
+                        display: block;
+                        left: 0px;
+                        top: 0px;
+                        transform: translate3d(-14.1113px, -1.0866px, 0px);
+                        transform-style: preserve-3d;
+                        backface-visibility: hidden;
+                      "
+                    >
+                      <img
+                        src="/assets/main/img/shape/circle-1.svg"
+                        alt="shape"
+                        class="circle-shape-item type-3 hero-1"
+                      />
+                    </li>
+                    <li
+                      class="layer"
+                      data-depth="0.03"
+                      style="
+                        position: absolute;
+                        display: block;
+                        left: 0px;
+                        top: 0px;
+                        transform: translate3d(-10.5834px, -0.814953px, 0px);
+                        transform-style: preserve-3d;
+                        backface-visibility: hidden;
+                      "
+                    >
+                      <img
+                        src="/assets/main/img/shape/circle-1.svg"
+                        alt="shape"
+                        class="circle-shape-item type-4 hero-1"
+                      />
+                    </li>
+                    <li
+                      class="layer"
+                      data-depth="0.03"
+                      style="
+                        position: absolute;
+                        display: block;
+                        left: 0px;
+                        top: 0px;
+                        transform: translate3d(-10.5834px, -0.814953px, 0px);
+                        transform-style: preserve-3d;
+                        backface-visibility: hidden;
+                      "
+                    >
+                      <img
+                        src="/assets/main/img/shape/circle-1.svg"
+                        alt="shape"
+                        class="circle-shape-item type-5 hero-1"
+                      />
+                    </li>
+                  </ul>
+                  <div class="text-center">
+                    <img
+                      src="/assets/files/beranda.png"
+                      alt="hero image"
+                      class="img-fluid position-relative z-5"
+                      style="width: 500px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature-tab-section pt-5 pb-5">
+          <div class="container">
+            <div class="row justify-content-center align-content-center">
+              <div class="col-md-10 col-lg-8">
+                <div class="section-heading text-center mb-3">
+                  <h4 class="h5 text-primary">-</h4>
+                  <h2>VISION AND MISSION</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 mt-3">
+              <div class="col-6 text-center">
+                <!-- <div class="text-center mb-3">
+                        <img src="/assets/files/services/bisnis.png" style="width: 110px;">
+                    </div> -->
+                <h5>VISION</h5>
+                <p class="mb-0 text-dark">
+                  To become one of the best international scale companies in the
+                  field of IT Solutions and advance the national IT industry
+                  with international competitiveness.
+                </p>
+              </div>
+              <div class="col-6 text-center">
+                <!-- <div class="text-center mb-3">
+                        <img src="/assets/files/services/medis.png" style="width: 110px;">
+                    </div> -->
+                <h5>Mission</h5>
+                <p class="mb-0 text-dark">
+                  To achieve the company vision, SoftPro.One Solutions has the
+                  following company mission:
+                </p>
+                <ul>
+                  <li>Improve service and get client satisfaction.</li>
+                  <li>
+                    Expanding service types by increasing solution and service
+                    variants.
+                  </li>
+                  <li>
+                    Committed to continuing to provide education to the local
+                    market about the importance of using IT services and
+                    products in the future.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="integration-section pt-3 pb-5"
+          style="background-color: #fafafa"
+        >
+          <div class="container">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-12">
+                <div
+                  class="section-heading text-center mb-5"
+                  data-aos="fade-up"
+                >
+                  <h4 class="h5 text-primary pt-3">-</h4>
+                  <h2 class="mb-4">Portfolio</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="integration-wrapper position-relative w-100">
+                  <ul
+                    class="position-absolute animate-element parallax-element shape-service z-1 d-none d-lg-none d-xl-block"
+                  >
+                    <li class="layer" data-depth="0.02">
+                      <img
+                        src="assets/main/img/color-shape/feature-2.svg"
+                        alt="shape"
+                        class="img-fluid position-absolute color-shape-2 z-5"
+                      />
+                    </li>
+                    <li class="layer" data-depth="0.03">
+                      <img
+                        src="assets/main/img/color-shape/feature-3.svg"
+                        alt="shape"
+                        class="img-fluid position-absolute color-shape-3"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="integration-list list-unstyled mb-0">
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/asset/amantara1.png"
+                          alt="amantara"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="/asset/amantara2.png"
+                          alt="amantara"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Amantara
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/asset/bantubeli1.png"
+                          alt="bantubeli1"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="/asset/bantubeli2.png"
+                          alt="bantubeli2"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Bantubeli
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/asset/cashier1.png"
+                          alt="cashier1"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="/asset/cashier2.png"
+                          alt="cashier2"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          BantuBeli Cashier
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/asset/driver1.png"
+                          alt="driver1"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="/asset/driver2.png"
+                          alt="driver2"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          bantubeli driver
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/7. Beejay Chef.jpg"
+                          alt="CV. Beejay Food"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          CV. Beejay Food
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/6. Universitas Merdeka.jpg"
+                          alt="Universitas Merdeka Malang"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Universitas Merdeka Malang
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/2. PLTU Tanjung Jati.jpg"
+                          alt="PLTU Tanjung Jati B"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          PLTU Tanjung Jati B
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/2BK8fvEG4ALaqFg3wID2ZPthBMyN9YgBpZ8zDNZA.png"
+                          alt="Starlife Medical Clinic"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Starlife Medical Clinic
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/4. Yayasan Kemala Bhayangkari.jpg"
+                          alt="Yayasan Kemala Bhayangkari"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Yayasan Kemala Bhayangkari
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/3. AIM Biscuits.jpg"
+                          alt="AIM Biscuits"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          AIM Biscuits
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/8. X Trans Logistik.jpg"
+                          alt="X Trans Logistik"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          X Trans Logistik
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/9. DPRD Kab.Gresik.jpg"
+                          alt="DPRD Kab.Gresik"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          DPRD Kab.Gresik
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/10. DPRD Kab.Tulungagung.jpg"
+                          alt="DPRD Kab.Tulungagung"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          DPRD Kab.Tulungagung
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/11. DPRD Kota Batu.jpg"
+                          alt="DPRD Kota Batu"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          DPRD Kota Batu
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/12. Pemda Kab.Gresik.jpg"
+                          alt="Pemda Kab.Gresik"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Gresik
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/13. Pemda Kab.Sidoarjo.jpg"
+                          alt="Pemda Kab.Sidoarjo"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Sidoarjo
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/14. Pemda Kab.Tulungagung.jpg"
+                          alt="Pemda Kab.Tulungagung"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Tulungagung
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/15. Pemda Kab.Kediri.jpg"
+                          alt="Pemda Kab.Kediri"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Kediri
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/16. Pemda Kab.Pasuruan.jpg"
+                          alt="Pemda Kab.Pasuruan"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Pasuruan
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/17. Pemda Kab.Lamongan.jpg"
+                          alt="Pemda Kab.Lamongan"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Lamongan
+                        </h6>
+                      </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="50">
+                      <div class="single-integration">
+                        <img
+                          src="/storage/upload/partners/18. Pemda Kab.Sumenep.jpg"
+                          alt="Pemda Kab.Sumenep"
+                          class="img-fluid"
+                        />
+                        <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
+                          Pemda Kab.Sumenep
+                        </h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Livewire Component wire-end:bKR9BJ4fMZ25fD9mLqFQ -->
+
+      <!--footer section start-->
+      <footer class="footer-section">
+        <!--footer top start-->
+        <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
+        <div
+          class="footer-top bg-dark text-white ptb-60"
+          style="
+            background: url(/assets/main/img/page-header-bg.svg) no-repeat
+              bottom right;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
+                <div class="footer-single-col">
+                  <div class="footer-single-col mb-4">
+                    <img
+                      src="/asset/Logo_SP-removebg-preview-white.png"
+                      alt="logo"
+                      class="img-fluid logo-white"
+                    />
+                    <img
+                      src="/asset/Logo_SP-removebg-preview-white.png"
+                      alt="logo"
+                      class="img-fluid logo-color"
+                    />
+                  </div>
+                  <p>-</p>
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0 offset-0 offset-md-1"
+              >
+                <!-- <iframe class="h-100 w-100 rounded-custom shadow" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4759610874175!2d112.76379097610459!3d-7.300300371767804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa539bffda91%3A0x8c06a1ed3c8b8288!2sBurningroom%20Technology!5e0!3m2!1sid!2sid!4v1675155655687!5m2!1sid!2sid" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy"></iframe> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--footer top end-->
+
+        <!--footer bottom start-->
+        <div class="footer-bottom bg-dark text-white py-4">
+          <div class="container">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12">
+                <div class="copyright-text text-center">
+                  <p class="mb-lg-0 mb-md-0">-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--footer bottom end-->
+      </footer>
+      <!--footer section end-->
+    </div>
+    <!-- Livewire Scripts -->
+
+    <script
+      src="/livewire/livewire.js?id=de3fca26689cb5a39af4"
+      data-turbo-eval="false"
+      data-turbolinks-eval="false"
+    ></script>
+    <script data-turbo-eval="false" data-turbolinks-eval="false">
+      if (window.livewire) {
+        console.warn(
+          "Livewire: It looks like Livewire's @livewireScripts JavaScript assets have already been loaded. Make sure you aren't loading them twice."
+        );
+      }
+
+      window.livewire = new Livewire();
+      window.livewire.devTools(true);
+      window.Livewire = window.livewire;
+      window.livewire_app_url = "";
+      window.livewire_token = "CPhbvtqCai1ZhXlHA0yi3VPmm7JfbEnknb1vjpQS";
+
+      /* Make sure Livewire loads first. */
+      if (window.Alpine) {
+        /* Defer showing the warning so it doesn't get buried under downstream errors. */
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            console.warn(
+              "Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire's scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js"
+            );
+          });
+        });
+      }
+
+      /* Make Alpine wait until Livewire is finished rendering to do its thing. */
+      window.deferLoadingAlpine = function (callback) {
+        window.addEventListener("livewire:load", function () {
+          callback();
+        });
+      };
+
+      let started = false;
+
+      window.addEventListener("alpine:initializing", function () {
+        if (!started) {
+          window.livewire.start();
+
+          started = true;
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        if (!started) {
+          window.livewire.start();
+
+          started = true;
+        }
+      });
+    </script>
+    <!--build:js-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/main/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="/assets/main/js/vendors/swiper-bundle.min.js"></script>
+    <script src="/assets/main/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/main/js/vendors/parallax.min.js"></script>
+    <script src="/assets/main/js/vendors/aos.js"></script>
+    <script src="/assets/main/js/app.js"></script>
+    <!--endbuild-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/620e12701ffac05b1d7a55b0/1fs3fg26i";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <script>
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "bottom-right",
+        showConfirmButton: false,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
+      });
+
+      window.addEventListener(
+        "alert",
+        ({ detail: { type, title, message, timer } }) => {
+          Swal.fire({
+            icon: type,
+            title: title,
+            text: message,
+            timer: timer,
+          });
+        }
+      );
+
+      $(function () {
+        $(".popper").popover({
+          placement: "bottom",
+          container: "body",
+          html: true,
+          content: function () {
+            return $(this).next(".popper-content").html();
+          },
+        });
+      });
+
+      $(function () {
+        $("#lowongan").tooltip("show");
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-221745733-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-221745733-1");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"8096d640a8103f9b","version":"2023.8.0","r":1,"token":"08332159b0ac46ccac96edf8f463d215","si":100}'
+      crossorigin="anonymous"
+    ></script>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
