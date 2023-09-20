@@ -1,0 +1,40 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Deploy website on push
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  web-deploy:
+    name:  Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Installing Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+
+    - name: Installing NPM packages
+      run: npm ci
+
+    - name: Building project
+      run: CI=false npm run build
+
+    # - name: Running tests
+    #   run: npm run test
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.GIT_CPANEL_REACT_SERVER }}
+        username: ${{ secrets.GIT_CPANEL_REACT_USER }}
+        password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
+        protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
+        local-dir: ./build/
