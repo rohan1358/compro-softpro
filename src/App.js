@@ -385,19 +385,28 @@ function App() {
               marginLeft: "20%",
             }}
           >
-            <h1
+            <div
               style={{
-                textDecoration: "underline",
-                textDecorationColor: "#0048A8",
-                fontSize: "5vw",
-                color: "#0048A8",
+                backgroundImage: "linear-gradient(to right, #004AAD , white)",
+                boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
+                paddingLeft: "0.5vw",
               }}
             >
-              About Company
-            </h1>
+              <h1
+                style={{
+                  textDecoration: "underline",
+                  textDecorationColor: "white",
+                  fontSize: "4vw",
+                  color: "white",
+                }}
+              >
+                About Company
+              </h1>
+            </div>
+
             <p
               style={{
-                fontSize: "3vw",
+                fontSize: "2vw",
                 color: "black",
                 marginTop: "0px",
               }}
@@ -413,15 +422,16 @@ function App() {
             <div
               style={{
                 color: "#0048A8",
-                backgroundImage: "linear-gradient(to right, #004AAD , #545454)",
+                backgroundImage: "linear-gradient(to right, #004AAD , white)",
                 boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
+                paddingLeft: "0.5vw",
               }}
             >
               <h1
                 style={{
                   textDecoration: "underline",
                   textDecorationColor: "white",
-                  fontSize: "5vw",
+                  fontSize: "4vw",
                   color: "white",
                 }}
               >
@@ -431,7 +441,7 @@ function App() {
             <div>
               <h1
                 style={{
-                  fontSize: "4vw",
+                  fontSize: "3vw",
                   color: "#0048A8",
                   marginBottom: 0,
                   marginLeft: "5vw",
@@ -441,7 +451,7 @@ function App() {
               </h1>
               <p
                 style={{
-                  fontSize: "3vw",
+                  fontSize: "2vw",
                   color: "black",
                   marginTop: "0px",
                 }}
@@ -455,7 +465,7 @@ function App() {
             <div>
               <h1
                 style={{
-                  fontSize: "4vw",
+                  fontSize: "3vw",
                   color: "#0048A8",
                   marginBottom: 0,
                   marginLeft: "5vw",
@@ -465,7 +475,7 @@ function App() {
               </h1>
               <p
                 style={{
-                  fontSize: "3vw",
+                  fontSize: "2vw",
                   color: "black",
                   marginTop: "0px",
                 }}
@@ -641,8 +651,9 @@ function App() {
             <div
               style={{
                 marginLeft: "10vw",
-                backgroundImage: "linear-gradient(to right, #004AAD , #545454)",
+                backgroundImage: "linear-gradient(to right, #004AAD , white)",
                 boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
+                paddingLeft:'0.5vw'
               }}
             >
               <h1
