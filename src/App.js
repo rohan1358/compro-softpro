@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 2000);
+
+    setTimeout(() => {
+      setShow2(false);
+      setTimeout(() => {
+        setShow2(false);
+      }, 3000);
+    }, 3000);
+
+    // let element = window.document.getElementById("testingbre");
+    // element.innerHTML = "test";
+    // element.remove();
+    // console.log("element", element);
+  }, []);
   return (
     <>
       <div id="preloader">
@@ -260,190 +279,198 @@ function App() {
           </nav>
         </header>
         <div>
-          <section
-            className="hero-section text-white bg-gradient"
-            style={{
-              background:
-                'url("/assets/main/img/hero-dot-bg.png") no-repeat center right',
-            }}
-          >
-            <div className="container">
-              <div className="row d-flex justify-content-center text-center text-lg-start align-items-center row-erp">
-                <div className="col-lg-6 col-md-10 col-12">
-                  <div className="hero-content-wrap">
-                    <h5 className="text-warning">-</h5>
-                    <h1 className="fw-bold display-5" data-aos="fade-up">
-                      About Company
-                    </h1>
-                    <p
-                      className="lead"
-                      data-aos="fade-up"
-                      style={{ fontSize: 18 }}
-                    >
-                      SoftPro.One Solutions is an IT software house company that
-                      provides services, solutions, and innovative information
-                      technology products for small to large-scale applications
-                      and systems. By mastering many development tools such as
-                      web, mobile-based and desktop-based. We can provide an
-                      appropriate and integrated system and application
-                      solutions.
-                    </p>
-                    <div
-                      className="action-btns mt-4"
-                      data-aos="fade-up"
-                      data-aos-delay={50}
-                    >
-                      <a
-                        href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
-                        className="btn btn-primary me-lg-3 me-sm-3"
-                        rel="noreferrer"
+          {show ? (
+            <section
+              className="hero-section text-white bg-gradient"
+              style={{
+                background:
+                  'url("/assets/main/img/hero-dot-bg.png") no-repeat center right',
+              }}
+            >
+              <div className="container">
+                <div className="row d-flex justify-content-center text-center text-lg-start align-items-center row-erp">
+                  <div className="col-lg-6 col-md-10 col-12">
+                    <div className="hero-content-wrap">
+                      <h5 className="text-warning">-</h5>
+                      <div id="testingbre"></div>
+                      <h1 className="fw-bold display-5" data-aos="fade-up">
+                        About Company
+                      </h1>
+                      <p
+                        className="lead"
+                        data-aos="fade-up"
+                        style={{ fontSize: 18 }}
                       >
-                        klik untuk konsultasi dengan kami
-                        <i className="fa-brands fa-whatsapp fa-fw ms-1" />
-                      </a>
+                        SoftPro.One Solutions is an IT software house company
+                        that provides services, solutions, and innovative
+                        information technology products for small to large-scale
+                        applications and systems. By mastering many development
+                        tools such as web, mobile-based and desktop-based. We
+                        can provide an appropriate and integrated system and
+                        application solutions.
+                      </p>
+                      <div
+                        className="action-btns mt-4"
+                        data-aos="fade-up"
+                        data-aos-delay={50}
+                      >
+                        <a
+                          href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                          className="btn btn-primary me-lg-3 me-sm-3"
+                          rel="noreferrer"
+                        >
+                          klik untuk konsultasi dengan kami
+                          <i className="fa-brands fa-whatsapp fa-fw ms-1" />
+                        </a>
+                      </div>
+                      <ul className="nav subscribe-feature-list text-center mt-3">
+                        <li className="nav-item">
+                          <span className="konsul">
+                            <i className="far fa-check-circle text-primary me-2" />
+                            Konsultasi Gratis
+                          </span>
+                        </li>
+                        <li className="nav-item">
+                          <span>
+                            <i className="far fa-check-circle text-primary me-2" />
+                            Layanan 24 Jam
+                          </span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul className="nav subscribe-feature-list text-center mt-3">
-                      <li className="nav-item">
-                        <span className="konsul">
-                          <i className="far fa-check-circle text-primary me-2" />
-                          Konsultasi Gratis
-                        </span>
-                      </li>
-                      <li className="nav-item">
-                        <span>
-                          <i className="far fa-check-circle text-primary me-2" />
-                          Layanan 24 Jam
-                        </span>
-                      </li>
-                    </ul>
                   </div>
-                </div>
-                <div className="col-lg-6 col-md-8 col-12">
-                  <div
-                    className="hero-img-wrap position-relative app-screen-bg"
-                    data-aos="fade-up"
-                    data-aos-delay={200}
-                  >
-                    <ul
-                      className="position-absolute animate-element parallax-element circle-shape-list"
-                      style={{
-                        transform: "translate3d(0px, 0px, 0px)",
-                        transformStyle: "preserve-3d",
-                        backfaceVisibility: "hidden",
-                      }}
+                  <div className="col-lg-6 col-md-8 col-12">
+                    <div
+                      className="hero-img-wrap position-relative app-screen-bg"
+                      data-aos="fade-up"
+                      data-aos-delay={200}
                     >
-                      <li
-                        className="layer"
-                        data-depth="0.02"
+                      <ul
+                        className="position-absolute animate-element parallax-element circle-shape-list"
                         style={{
-                          position: "absolute",
-                          display: "block",
-                          left: 0,
-                          top: 0,
-                          transform:
-                            "translate3d(-7.05563px, -0.543302px, 0px)",
+                          transform: "translate3d(0px, 0px, 0px)",
                           transformStyle: "preserve-3d",
                           backfaceVisibility: "hidden",
                         }}
                       >
+                        <li
+                          className="layer"
+                          data-depth="0.02"
+                          style={{
+                            position: "absolute",
+                            display: "block",
+                            left: 0,
+                            top: 0,
+                            transform:
+                              "translate3d(-7.05563px, -0.543302px, 0px)",
+                            transformStyle: "preserve-3d",
+                            backfaceVisibility: "hidden",
+                          }}
+                        >
+                          <img
+                            src="/assets/main/img/shape/circle-1.svg"
+                            alt="shape"
+                            className="circle-shape-item type-1 hero-1"
+                          />
+                        </li>
+                        <li
+                          className="layer"
+                          data-depth="0.04"
+                          style={{
+                            position: "absolute",
+                            display: "block",
+                            left: 0,
+                            top: 0,
+                            transform:
+                              "translate3d(-14.1113px, -1.0866px, 0px)",
+                            transformStyle: "preserve-3d",
+                            backfaceVisibility: "hidden",
+                          }}
+                        >
+                          <img
+                            src="/assets/main/img/shape/circle-1.svg"
+                            alt="shape"
+                            className="circle-shape-item type-2 hero-1"
+                          />
+                        </li>
+                        <li
+                          className="layer"
+                          data-depth="0.04"
+                          style={{
+                            position: "absolute",
+                            display: "block",
+                            left: 0,
+                            top: 0,
+                            transform:
+                              "translate3d(-14.1113px, -1.0866px, 0px)",
+                            transformStyle: "preserve-3d",
+                            backfaceVisibility: "hidden",
+                          }}
+                        >
+                          <img
+                            src="/assets/main/img/shape/circle-1.svg"
+                            alt="shape"
+                            className="circle-shape-item type-3 hero-1"
+                          />
+                        </li>
+                        <li
+                          className="layer"
+                          data-depth="0.03"
+                          style={{
+                            position: "absolute",
+                            display: "block",
+                            left: 0,
+                            top: 0,
+                            transform:
+                              "translate3d(-10.5834px, -0.814953px, 0px)",
+                            transformStyle: "preserve-3d",
+                            backfaceVisibility: "hidden",
+                          }}
+                        >
+                          <img
+                            src="/assets/main/img/shape/circle-1.svg"
+                            alt="shape"
+                            className="circle-shape-item type-4 hero-1"
+                          />
+                        </li>
+                        <li
+                          className="layer"
+                          data-depth="0.03"
+                          style={{
+                            position: "absolute",
+                            display: "block",
+                            left: 0,
+                            top: 0,
+                            transform:
+                              "translate3d(-10.5834px, -0.814953px, 0px)",
+                            transformStyle: "preserve-3d",
+                            backfaceVisibility: "hidden",
+                          }}
+                        >
+                          <img
+                            src="/assets/main/img/shape/circle-1.svg"
+                            alt="shape"
+                            className="circle-shape-item type-5 hero-1"
+                          />
+                        </li>
+                      </ul>
+                      <div className="text-center">
                         <img
-                          src="/assets/main/img/shape/circle-1.svg"
-                          alt="shape"
-                          className="circle-shape-item type-1 hero-1"
+                          src="/assets/files/beranda.png"
+                          alt="beranda"
+                          className="img-fluid position-relative z-5"
+                          style={{ width: 500 }}
                         />
-                      </li>
-                      <li
-                        className="layer"
-                        data-depth="0.04"
-                        style={{
-                          position: "absolute",
-                          display: "block",
-                          left: 0,
-                          top: 0,
-                          transform: "translate3d(-14.1113px, -1.0866px, 0px)",
-                          transformStyle: "preserve-3d",
-                          backfaceVisibility: "hidden",
-                        }}
-                      >
-                        <img
-                          src="/assets/main/img/shape/circle-1.svg"
-                          alt="shape"
-                          className="circle-shape-item type-2 hero-1"
-                        />
-                      </li>
-                      <li
-                        className="layer"
-                        data-depth="0.04"
-                        style={{
-                          position: "absolute",
-                          display: "block",
-                          left: 0,
-                          top: 0,
-                          transform: "translate3d(-14.1113px, -1.0866px, 0px)",
-                          transformStyle: "preserve-3d",
-                          backfaceVisibility: "hidden",
-                        }}
-                      >
-                        <img
-                          src="/assets/main/img/shape/circle-1.svg"
-                          alt="shape"
-                          className="circle-shape-item type-3 hero-1"
-                        />
-                      </li>
-                      <li
-                        className="layer"
-                        data-depth="0.03"
-                        style={{
-                          position: "absolute",
-                          display: "block",
-                          left: 0,
-                          top: 0,
-                          transform:
-                            "translate3d(-10.5834px, -0.814953px, 0px)",
-                          transformStyle: "preserve-3d",
-                          backfaceVisibility: "hidden",
-                        }}
-                      >
-                        <img
-                          src="/assets/main/img/shape/circle-1.svg"
-                          alt="shape"
-                          className="circle-shape-item type-4 hero-1"
-                        />
-                      </li>
-                      <li
-                        className="layer"
-                        data-depth="0.03"
-                        style={{
-                          position: "absolute",
-                          display: "block",
-                          left: 0,
-                          top: 0,
-                          transform:
-                            "translate3d(-10.5834px, -0.814953px, 0px)",
-                          transformStyle: "preserve-3d",
-                          backfaceVisibility: "hidden",
-                        }}
-                      >
-                        <img
-                          src="/assets/main/img/shape/circle-1.svg"
-                          alt="shape"
-                          className="circle-shape-item type-5 hero-1"
-                        />
-                      </li>
-                    </ul>
-                    <div className="text-center">
-                      <img
-                        src="/assets/files/beranda.png"
-                        alt="beranda"
-                        className="img-fluid position-relative z-5"
-                        style={{ width: 500 }}
-                      />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          ) : (
+            <h1>Loading . . . . </h1>
+          )}
+
           <section className="feature-tab-section pt-5 pb-5">
             <div className="container">
               <div className="row justify-content-center align-content-center">
@@ -457,8 +484,8 @@ function App() {
               <div className="row g-3 mt-3">
                 <div className="col-6 text-left">
                   {/* <div class="text-left mb-3">
-                  <img src="/assets/files/services/bisnis.png" style="width: 110px;">
-              </div> */}
+                <img src="/assets/files/services/bisnis.png" style="width: 110px;">
+            </div> */}
                   <h5>VISION</h5>
                   <p className="mb-0 text-dark">
                     To become one of the best international scale companies in
@@ -468,8 +495,8 @@ function App() {
                 </div>
                 <div className="col-6 text-left">
                   {/* <div class="text-center mb-3">
-                  <img src="/assets/files/services/medis.png" style="width: 110px;">
-              </div> */}
+                <img src="/assets/files/services/medis.png" style="width: 110px;">
+            </div> */}
                   <h5>Mission</h5>
                   <p className="mb-0 text-dark">
                     To achieve the company vision, SoftPro.One Solutions has the
@@ -491,383 +518,390 @@ function App() {
               </div>
             </div>
           </section>
-          <section
-            className="integration-section pt-3 pb-5"
-            style={{ backgroundColor: "#fafafa" }}
-          >
-            <div className="container">
-              <div className="row align-items-center justify-content-lg-between">
-                <div className="col-12">
-                  <div
-                    className="section-heading text-center mb-5"
-                    data-aos="fade-up"
-                  >
-                    <h4 className="h5 text-primary pt-3">-</h4>
-                    <h2 className="mb-4">Portfolio</h2>
+          {show ? (
+            <section
+              className="integration-section pt-3 pb-5"
+              style={{ backgroundColor: "#fafafa" }}
+            >
+              <div className="container">
+                <div className="row align-items-center justify-content-lg-between">
+                  <div className="col-12">
+                    <div
+                      className="section-heading text-center mb-5"
+                      data-aos="fade-up"
+                    >
+                      <h4 className="h5 text-primary pt-3">-</h4>
+                      <h2 className="mb-4">Portfolio</h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-12">
+                    <div
+                      className="integration-wrapper position-relative w-100"
+                      id="pancing"
+                    >
+                      <ul className="position-absolute animate-element parallax-element shape-service z-1 d-none d-lg-none d-xl-block">
+                        <li className="layer" data-depth="0.02">
+                          <img
+                            src="assets/main/img/color-shape/feature-2.svg"
+                            alt="shape"
+                            className="img-fluid position-absolute color-shape-2 z-5"
+                          />
+                        </li>
+                        <li className="layer" data-depth="0.03">
+                          <img
+                            src="assets/main/img/color-shape/feature-3.svg"
+                            alt="shape"
+                            className="img-fluid position-absolute color-shape-3"
+                          />
+                        </li>
+                      </ul>
+                      <ul className="integration-list list-unstyled mb-0">
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/asset/amantara1.png"
+                              alt="amantara"
+                              className="img-fluid"
+                            />
+                            <img
+                              src="/asset/amantara2.png"
+                              alt="amantara"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Amantara
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/asset/bantubeli1.png"
+                              alt="bantubeli1"
+                              className="img-fluid"
+                            />
+                            <img
+                              src="/asset/bantubeli2.png"
+                              alt="bantubeli2"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Bantubeli
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/asset/cashier1.png"
+                              alt="cashier1"
+                              className="img-fluid"
+                            />
+                            <img
+                              src="/asset/cashier2.png"
+                              alt="cashier2"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              BantuBeli Cashier
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/asset/driver1.png"
+                              alt="driver1"
+                              className="img-fluid"
+                            />
+                            <img
+                              src="/asset/driver2.png"
+                              alt="driver2"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              bantubeli driver
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/7. Beejay Chef.jpg"
+                              alt="CV. Beejay Food"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              CV. Beejay Food
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/6. Universitas Merdeka.jpg"
+                              alt="Universitas Merdeka Malang"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Universitas Merdeka Malang
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/2. PLTU Tanjung Jati.jpg"
+                              alt="PLTU Tanjung Jati B"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              PLTU Tanjung Jati B
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/2BK8fvEG4ALaqFg3wID2ZPthBMyN9YgBpZ8zDNZA.png"
+                              alt="Starlife Medical Clinic"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Starlife Medical Clinic
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/4. Yayasan Kemala Bhayangkari.jpg"
+                              alt="Yayasan Kemala Bhayangkari"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Yayasan Kemala Bhayangkari
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/3. AIM Biscuits.jpg"
+                              alt="AIM Biscuits"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              AIM Biscuits
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/8. X Trans Logistik.jpg"
+                              alt="X Trans Logistik"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              X Trans Logistik
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/9. DPRD Kab.Gresik.jpg"
+                              alt="DPRD Kab.Gresik"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              DPRD Kab.Gresik
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/10. DPRD Kab.Tulungagung.jpg"
+                              alt="DPRD Kab.Tulungagung"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              DPRD Kab.Tulungagung
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/11. DPRD Kota Batu.jpg"
+                              alt="DPRD Kota Batu"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              DPRD Kota Batu
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/12. Pemda Kab.Gresik.jpg"
+                              alt="Pemda Kab.Gresik"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Gresik
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/13. Pemda Kab.Sidoarjo.jpg"
+                              alt="Pemda Kab.Sidoarjo"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Sidoarjo
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/14. Pemda Kab.Tulungagung.jpg"
+                              alt="Pemda Kab.Tulungagung"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Tulungagung
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/15. Pemda Kab.Kediri.jpg"
+                              alt="Pemda Kab.Kediri"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Kediri
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/16. Pemda Kab.Pasuruan.jpg"
+                              alt="Pemda Kab.Pasuruan"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Pasuruan
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/17. Pemda Kab.Lamongan.jpg"
+                              alt="Pemda Kab.Lamongan"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Lamongan
+                            </h6>
+                          </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay={50}>
+                          <div className="single-integration">
+                            <img
+                              src="/storage/upload/partners/18. Pemda Kab.Sumenep.jpg"
+                              alt="Pemda Kab.Sumenep"
+                              className="img-fluid"
+                            />
+                            <h6
+                              className="mb-0 mt-2"
+                              style={{ fontSize: "0.8rem" }}
+                            >
+                              Pemda Kab.Sumenep
+                            </h6>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-12">
-                  <div className="integration-wrapper position-relative w-100">
-                    <ul className="position-absolute animate-element parallax-element shape-service z-1 d-none d-lg-none d-xl-block">
-                      <li className="layer" data-depth="0.02">
-                        <img
-                          src="assets/main/img/color-shape/feature-2.svg"
-                          alt="shape"
-                          className="img-fluid position-absolute color-shape-2 z-5"
-                        />
-                      </li>
-                      <li className="layer" data-depth="0.03">
-                        <img
-                          src="assets/main/img/color-shape/feature-3.svg"
-                          alt="shape"
-                          className="img-fluid position-absolute color-shape-3"
-                        />
-                      </li>
-                    </ul>
-                    <ul className="integration-list list-unstyled mb-0">
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/asset/amantara1.png"
-                            alt="amantara"
-                            className="img-fluid"
-                          />
-                          <img
-                            src="/asset/amantara2.png"
-                            alt="amantara"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Amantara
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/asset/bantubeli1.png"
-                            alt="bantubeli1"
-                            className="img-fluid"
-                          />
-                          <img
-                            src="/asset/bantubeli2.png"
-                            alt="bantubeli2"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Bantubeli
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/asset/cashier1.png"
-                            alt="cashier1"
-                            className="img-fluid"
-                          />
-                          <img
-                            src="/asset/cashier2.png"
-                            alt="cashier2"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            BantuBeli Cashier
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/asset/driver1.png"
-                            alt="driver1"
-                            className="img-fluid"
-                          />
-                          <img
-                            src="/asset/driver2.png"
-                            alt="driver2"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            bantubeli driver
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/7. Beejay Chef.jpg"
-                            alt="CV. Beejay Food"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            CV. Beejay Food
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/6. Universitas Merdeka.jpg"
-                            alt="Universitas Merdeka Malang"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Universitas Merdeka Malang
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/2. PLTU Tanjung Jati.jpg"
-                            alt="PLTU Tanjung Jati B"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            PLTU Tanjung Jati B
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/2BK8fvEG4ALaqFg3wID2ZPthBMyN9YgBpZ8zDNZA.png"
-                            alt="Starlife Medical Clinic"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Starlife Medical Clinic
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/4. Yayasan Kemala Bhayangkari.jpg"
-                            alt="Yayasan Kemala Bhayangkari"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Yayasan Kemala Bhayangkari
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/3. AIM Biscuits.jpg"
-                            alt="AIM Biscuits"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            AIM Biscuits
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/8. X Trans Logistik.jpg"
-                            alt="X Trans Logistik"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            X Trans Logistik
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/9. DPRD Kab.Gresik.jpg"
-                            alt="DPRD Kab.Gresik"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            DPRD Kab.Gresik
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/10. DPRD Kab.Tulungagung.jpg"
-                            alt="DPRD Kab.Tulungagung"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            DPRD Kab.Tulungagung
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/11. DPRD Kota Batu.jpg"
-                            alt="DPRD Kota Batu"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            DPRD Kota Batu
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/12. Pemda Kab.Gresik.jpg"
-                            alt="Pemda Kab.Gresik"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Gresik
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/13. Pemda Kab.Sidoarjo.jpg"
-                            alt="Pemda Kab.Sidoarjo"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Sidoarjo
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/14. Pemda Kab.Tulungagung.jpg"
-                            alt="Pemda Kab.Tulungagung"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Tulungagung
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/15. Pemda Kab.Kediri.jpg"
-                            alt="Pemda Kab.Kediri"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Kediri
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/16. Pemda Kab.Pasuruan.jpg"
-                            alt="Pemda Kab.Pasuruan"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Pasuruan
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/17. Pemda Kab.Lamongan.jpg"
-                            alt="Pemda Kab.Lamongan"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Lamongan
-                          </h6>
-                        </div>
-                      </li>
-                      <li data-aos="fade-up" data-aos-delay={50}>
-                        <div className="single-integration">
-                          <img
-                            src="/storage/upload/partners/18. Pemda Kab.Sumenep.jpg"
-                            alt="Pemda Kab.Sumenep"
-                            className="img-fluid"
-                          />
-                          <h6
-                            className="mb-0 mt-2"
-                            style={{ fontSize: "0.8rem" }}
-                          >
-                            Pemda Kab.Sumenep
-                          </h6>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
+          ) : (
+            <h1>Loading . . . . </h1>
+          )}
         </div>
         {/* Livewire Component wire-end:bKR9BJ4fMZ25fD9mLqFQ */}
         {/*footer section start*/}

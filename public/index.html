@@ -1,8 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./asset/icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="./asset/icon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>SoftPro One Solution</title>
+
     <!-- Google Tag Manager -->
-    <script
+    <!-- <script
       src="https://embed.tawk.to/_s/v4/app/65040be8d34/js/twk-main.js"
       charset="UTF-8"
       crossorigin="*"
@@ -76,7 +101,7 @@
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-TK56FJ9");
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
     <meta
       name="google-site-verification"
@@ -89,7 +114,7 @@
     />
     <!-- SEO -->
     <title>Burningroom Technology</title>
-    <link rel="canonical" href="https://burningroom.co.id" />
+    <link rel="canonical" href="/" />
     <meta name="author" content="CV Burningroom Technology" />
     <meta
       name="keywords"
@@ -101,9 +126,9 @@
     />
     <meta
       name="msapplication-TileImage"
-      content="https://burningroom.co.id/assets/main/img/logo/icon.png"
+      content="./assets/main/img/logo/icon.png"
     />
-    <meta property="og:url" content="https://burningroom.co.id" />
+    <meta property="og:url" content="/" />
     <meta property="og:site_name" content="Burningroom Technology" />
     <meta property="og:title" content="Burningroom Technology" />
     <meta property="og:type" content="website" />
@@ -115,15 +140,12 @@
     <meta
       property="og:image"
       itemprop="image"
-      content="https://burningroom.co.id/assets/main/img/logo/icon.png"
+      content="./assets/main/img/logo/icon.png"
     />
-    <meta
-      property="og:image:url"
-      content="https://burningroom.co.id/assets/main/img/logo/icon.png"
-    />
+    <meta property="og:image:url" content="./assets/main/img/logo/icon.png" />
     <meta
       property="og:image:secure_url"
-      content="https://burningroom.co.id/assets/main/img/logo/icon.png"
+      content="./assets/main/img/logo/icon.png"
     />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="300" />
@@ -136,33 +158,27 @@
       name="twitter:description"
       content="Burningroom Techonolgy adalah sebuah perusahaan yang bergerak dibidang jasa Social Media Management, Website Development, dan Application Development yang berada di kota Surabaya - Jawa Timur."
     />
-    <meta
-      name="twitter:image"
-      content="https://burningroom.co.id/assets/main/img/logo/icon.png"
-    />
+    <meta name="twitter:image" content="./assets/main/img/logo/icon.png" />
     <meta name="twitter:creator" content="@burningroom" />
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="https://burningroom.co.id/assets/favicon/apple-touch-icon.png"
+      href="./assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="https://burningroom.co.id/assets/favicon/favicon-32x32.png"
+      href="./assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="https://burningroom.co.id/assets/favicon/favicon-16x16.png"
+      href="./assets/favicon/favicon-16x16.png"
     />
-    <link
-      rel="manifest"
-      href="https://burningroom.co.id/assets/favicon/site.webmanifest"
-    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
     <!--google fonts-->
     <meta
@@ -186,17 +202,14 @@
     />
 
     <!--build:css-->
-    <link
-      rel="stylesheet"
-      href="https://burningroom.co.id/assets/main/css/main.css"
-    />
+    <link rel="stylesheet" href="./assets/main/css/main.css" />
 
     <link
       rel="stylesheet"
-      href="/site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
+      href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"
     />
     <script
-      src="/site-assets.fontawesome.com/releases/v6.0.0/js/all.js"
+      src="./site-assets.fontawesome.com/releases/v6.0.0/js/all.js"
       data-auto-add-css="false"
       data-auto-replace-svg="false"
     ></script>
@@ -1726,10 +1739,12 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--preloader start-->
-    <div id="preloader" style="display: none">
+
+    <!--preloader start-->
+    <div id="preloader">
       <div class="preloader-wrap">
         <img
-          src="https://burningroom.co.id/assets/main/img/logo/BR-icon.png"
+          src="./asset/icon.png"
           alt="logo"
           class="img-fluid preloader-icon"
         />
@@ -1745,18 +1760,18 @@
             class="container d-flex align-items-center justify-content-lg-between position-relative"
           >
             <a
-              href="https://burningroom.co.id"
+              href="/"
               class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none"
             >
               <img
-                src="https://burningroom.co.id/assets/files/logo/Logo BR - Dark Blue - Header.png"
-                alt="logo"
+                src="./asset/Logo_SP-removebg-preview-white.png"
+                alt="Logo_SP-removebg-preview"
                 class="img-fluid logo-white"
                 style="max-width: 150px"
               />
               <img
-                src="https://burningroom.co.id/assets/files/logo/Logo BR - Soft Blue - White Background.png"
-                alt="logo"
+                src="./asset/Logo_SP-removebg-preview.png"
+                alt="Logo_SP-removebg-preview"
                 class="img-fluid logo-color"
                 style="max-width: 150px"
               />
@@ -1774,120 +1789,90 @@
               ></span>
             </a>
             <div class="clearfix"></div>
+
             <div class="collapse navbar-collapse justify-content-center">
               <ul
                 class="nav col-12 col-md-auto justify-content-center main-menu"
               >
                 <li>
-                  <a
-                    href="https://burningroom.co.id"
-                    class="nav-link text-primary active"
-                    >BERANDA</a
-                  >
+                  <a href="#top" class="nav-link">BERANDA</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    >LAYANAN</a
-                  >
-                  <div
-                    class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
-                    style="display: none"
-                  >
-                    <div
-                      class="dropdown-grid rounded-custom width-half"
-                      style="width: 326px"
-                    >
-                      <div class="dropdown-grid-item">
-                        <a
-                          href="/product/aplikasi-erp-bisnis-custom"
-                          class="dropdown-link"
-                        >
-                          <div class="dropdown-info">
-                            <div class="drop-title">
-                              Jasa Pembuatan Aplikasi ERP Bisnis
-                            </div>
-                          </div>
-                        </a>
-                        <a
-                          href="/product/aplikasi-erp-medis-custom"
-                          class="dropdown-link"
-                        >
-                          <div class="dropdown-info">
-                            <div class="drop-title">
-                              Jasa Pembuatan Aplikasi Medis
-                            </div>
-                          </div>
-                        </a>
-                        <a
-                          href="/product/aplikasi-erp-akademik-custom"
-                          class="dropdown-link"
-                        >
-                          <div class="dropdown-info">
-                            <div class="drop-title">
-                              Jasa Pembuatan Aplikasi Akademik
-                            </div>
-                          </div>
-                        </a>
-                        <a
-                          href="/product/aplikasi-pemasaran-wisata-custom"
-                          class="dropdown-link"
-                        >
-                          <div class="dropdown-info">
-                            <div class="drop-title">
-                              Jasa Pembuatan Aplikasi Pariwisata
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                <li class="nav-item">
+                  <a href="#about_company" class="nav-link">About</a>
                 </li>
                 <li>
-                  <a href="https://burningroom.co.id/company" class="nav-link"
-                    >PERUSAHAAN</a
+                  <a href="#vission_mission" class="nav-link"
+                    >Vissin & Mission</a
                   >
                 </li>
 
                 <li>
-                  <a href="https://burningroom.co.id/contact" class="nav-link"
-                    >KONTAK</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    >LAINNYA</a
-                  >
-                  <div
-                    class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
-                    style="display: none"
-                  >
-                    <div class="dropdown-grid rounded-custom width-half">
-                      <div class="dropdown-grid-item">
-                        <a href="/jobs" class="dropdown-link">
-                          <div class="drop-title">KARIR</div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
               </ul>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center">
+              <!-- <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+                    <li><a href="/" class="nav-link text-primary active">BERANDA</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">LAYANAN</a>
+                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="display: none;">
+                            <div class="dropdown-grid rounded-custom width-half" style="width: 326px;">
+                                <div class="dropdown-grid-item">
+                                    
+                                    <a href="/product/aplikasi-erp-bisnis-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi Android</div>
+                                        </div>
+                                    </a>
+                                    <a href="/product/aplikasi-erp-medis-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi IOS</div>
+                                        </div>
+                                    </a>
+                                    <a href="/product/aplikasi-erp-akademik-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi Berbasis Web</div>
+                                        </div>
+                                    </a>
+                                    <a href="/product/aplikasi-pemasaran-wisata-custom" class="dropdown-link">
+                                        <div class="dropdown-info">
+                                            <div class="drop-title ">Jasa Pembuatan Aplikasi Berbasis Desktop</div>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="//company" class="nav-link ">PERUSAHAAN</a></li>
+                    <li><a href="//contact" class="nav-link ">KONTAK</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">LAINNYA</a>
+                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="display: none;">
+                            <div class="dropdown-grid rounded-custom width-half">
+                                <div class="dropdown-grid-item">
+                                    <a href="/jobs" class="dropdown-link">
+                                        <div class="drop-title ">KARIR</div>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul> -->
             </div>
             <div
               class="action-btns text-end me-5 me-lg-0 d-none d-xl-block d-md-none d-lg-none"
             >
               <a
-                href="https://wa.me/6282124777891?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
                 class="btn btn-primary"
                 style="font-size: 14px"
                 target="_blank"
-                >Tanya Estimasi&nbsp;Biaya
-                <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
+                >Consultation <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
               ></a>
             </div>
             <div
@@ -1897,11 +1882,11 @@
             >
               <div class="offcanvas-header d-flex align-items-center mt-4">
                 <a
-                  href="https://burningroom.co.id"
+                  href="/"
                   class="d-flex align-items-center mb-md-0 text-decoration-none"
                 >
                   <img
-                    src="https://burningroom.co.id/assets/main/img/logo/BR-black.png"
+                    src="./asset/Logo_SP-removebg-preview.png"
                     alt="logo"
                     class="img-fluid w-50 ps-2"
                   />
@@ -1920,116 +1905,30 @@
                   class="nav col-12 col-md-auto justify-content-center main-menu"
                 >
                   <li>
-                    <a
-                      href="https://burningroom.co.id"
-                      class="nav-link text-primary active"
+                    <a href="#top" class="nav-link text-primary active"
                       >BERANDA</a
                     >
                   </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="true"
-                    >
-                      LAYANAN
-                    </a>
-                    <div
-                      class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
-                      data-bs-popper="none"
-                    >
-                      <div class="dropdown-grid rounded-custom width-half">
-                        <div class="dropdown-grid-item">
-                          <a
-                            href="/product/aplikasi-erp-bisnis-custom"
-                            class="dropdown-link"
-                          >
-                            <div class="dropdown-info">
-                              <div class="drop-title">
-                                Jasa Pembuatan Aplikasi ERP Bisnis
-                              </div>
-                            </div>
-                          </a>
-                          <a
-                            href="/product/aplikasi-erp-medis-custom"
-                            class="dropdown-link"
-                          >
-                            <div class="dropdown-info">
-                              <div class="drop-title">
-                                Jasa Pembuatan Aplikasi Medis
-                              </div>
-                            </div>
-                          </a>
-                          <a
-                            href="/product/aplikasi-erp-akademik-custom"
-                            class="dropdown-link"
-                          >
-                            <div class="dropdown-info">
-                              <div class="drop-title">
-                                Jasa Pembuatan Aplikasi Akademik
-                              </div>
-                            </div>
-                          </a>
-                          <a
-                            href="/product/aplikasi-pemasaran-wisata-custom"
-                            class="dropdown-link"
-                          >
-                            <div class="dropdown-info">
-                              <div class="drop-title">
-                                Jasa Pembuatan Aplikasi Pariwisata
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                  <li class="nav-item">
+                    <a href="#about_company" class="nav-link">About</a>
                   </li>
                   <li>
-                    <a href="https://burningroom.co.id/company" class="nav-link"
-                      >PERUSAHAAN</a
+                    <a href="#vission_mission" class="nav-link"
+                      >Vissin & Mission</a
                     >
                   </li>
 
                   <li>
-                    <a href="https://burningroom.co.id/contact" class="nav-link"
-                      >KONTAK</a
-                    >
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="true"
-                    >
-                      LAINNYA
-                    </a>
-                    <div
-                      class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
-                      data-bs-popper="none"
-                    >
-                      <div class="dropdown-grid rounded-custom width-half">
-                        <div class="dropdown-grid-item">
-                          <a href="/jobs" class="dropdown-link">
-                            <div class="dropdown-info">
-                              <div class="drop-title">Karir</div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
                   </li>
                 </ul>
                 <div class="action-btns mt-4 ps-3">
                   <a
-                    href="https://wa.me/6282124777891?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                    href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
                     class="btn btn-primary"
                     style="font-size: 14px"
                     target="_blank"
-                    >Tanya Estimasi&nbsp;Biaya
+                    >Consultation
                     <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
                   ></a>
                 </div>
@@ -2039,48 +1938,40 @@
         </nav>
       </header>
 
-      <div wire:id="HaJjAmNJHg3GvhRbbJNV">
+      <div>
         <section
+          id="top"
           class="hero-section text-white bg-gradient"
           style="
-            background: url('https://burningroom.co.id/assets/main/img/hero-dot-bg.png')
-              no-repeat center right;
+            background: url('./assets/main/img/hero-dot-bg.png') no-repeat
+              center right;
           "
         >
           <div class="container">
             <div
               class="row d-flex justify-content-center text-center text-lg-start align-items-center row-erp"
             >
-              <div class="col-lg-6 col-md-10 col-12">
+              <div class="col-lg-8 col-md-10 col-12">
                 <div class="hero-content-wrap">
-                  <h5 class="text-warning">Layanan Unggulan</h5>
-                  <h1
-                    class="fw-bold display-5 aos-init aos-animate"
-                    data-aos="fade-up"
-                  >
-                    JASA PEMBUATAN<br />APLIKASI ERP BISNIS
-                  </h1>
-                  <p
-                    class="lead aos-init aos-animate"
-                    data-aos="fade-up"
-                    style="font-size: 18px"
-                  >
-                    Aplikasi ERP Bisnis Yang Kami Produksi Selalu Berdasarkan
-                    Kepada Alur Bisnis Yang Sudah Dilakukan Di Perusahaan Anda.
-                    Proses Transformasi Digital Dari Sistem Manual Ke Sistem
-                    Digital Akan Semakin Mengoptimalkan Kinerja Dari Perusahaan
-                    Anda.
+                  <h5 class="text-warning">-</h5>
+                  <h5 class="fw-bold display-5" data-aos="fade-up">
+                    #LetsRevolutionizeYourBusiness
+                  </h5>
+                  <p class="lead" data-aos="fade-up" style="font-size: 18px">
+                    Embrace innovation and revolutionize your business with us,
+                    for in the face of change lies the opportunity to soar
+                    beyond ordinary expectations and redefine what's possible.
                   </p>
                   <div
-                    class="action-btns mt-4 aos-init aos-animate"
+                    class="action-btns mt-4"
                     data-aos="fade-up"
                     data-aos-delay="50"
                   >
                     <a
-                      href="https://wa.me/6282124777891?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
+                      href="https://wa.me/6285974543498?text=Halo%2C%20bisa%20tanya%20estimasi%20biaya%20untuk%20rencana%20aplikasi%20yang%20akan%20saya%20buat?"
                       class="btn btn-primary me-lg-3 me-sm-3"
                       target="_blank"
-                      >Klik Untuk Tanya Estimasi&nbsp;Biaya
+                      >Click for the consultation
                       <i class="fa-brands fa-whatsapp fa-fw ms-1"></i
                     ></a>
                   </div>
@@ -2100,9 +1991,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-8 col-12">
+              <div class="col-lg-4 col-md-8 col-12">
                 <div
-                  class="hero-img-wrap position-relative app-screen-bg aos-init aos-animate"
+                  class="hero-img-wrap position-relative app-screen-bg"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -2118,17 +2009,17 @@
                       class="layer"
                       data-depth="0.02"
                       style="
-                        position: relative;
+                        position: absolute;
                         display: block;
                         left: 0px;
                         top: 0px;
-                        transform: translate3d(4.71692px, 6.84px, 0px);
+                        transform: translate3d(-7.05563px, -0.543302px, 0px);
                         transform-style: preserve-3d;
                         backface-visibility: hidden;
                       "
                     >
                       <img
-                        src="https://burningroom.co.id/assets/main/img/shape/circle-1.svg"
+                        src="./assets/main/img/shape/circle-1.svg"
                         alt="shape"
                         class="circle-shape-item type-1 hero-1"
                       />
@@ -2141,13 +2032,13 @@
                         display: block;
                         left: 0px;
                         top: 0px;
-                        transform: translate3d(9.43385px, 13.68px, 0px);
+                        transform: translate3d(-14.1113px, -1.0866px, 0px);
                         transform-style: preserve-3d;
                         backface-visibility: hidden;
                       "
                     >
                       <img
-                        src="https://burningroom.co.id/assets/main/img/shape/circle-1.svg"
+                        src="./assets/main/img/shape/circle-1.svg"
                         alt="shape"
                         class="circle-shape-item type-2 hero-1"
                       />
@@ -2160,13 +2051,13 @@
                         display: block;
                         left: 0px;
                         top: 0px;
-                        transform: translate3d(9.43385px, 13.68px, 0px);
+                        transform: translate3d(-14.1113px, -1.0866px, 0px);
                         transform-style: preserve-3d;
                         backface-visibility: hidden;
                       "
                     >
                       <img
-                        src="https://burningroom.co.id/assets/main/img/shape/circle-1.svg"
+                        src="./assets/main/img/shape/circle-1.svg"
                         alt="shape"
                         class="circle-shape-item type-3 hero-1"
                       />
@@ -2179,13 +2070,13 @@
                         display: block;
                         left: 0px;
                         top: 0px;
-                        transform: translate3d(7.07538px, 10.26px, 0px);
+                        transform: translate3d(-10.5834px, -0.814953px, 0px);
                         transform-style: preserve-3d;
                         backface-visibility: hidden;
                       "
                     >
                       <img
-                        src="https://burningroom.co.id/assets/main/img/shape/circle-1.svg"
+                        src="./assets/main/img/shape/circle-1.svg"
                         alt="shape"
                         class="circle-shape-item type-4 hero-1"
                       />
@@ -2198,13 +2089,13 @@
                         display: block;
                         left: 0px;
                         top: 0px;
-                        transform: translate3d(7.07538px, 10.26px, 0px);
+                        transform: translate3d(-10.5834px, -0.814953px, 0px);
                         transform-style: preserve-3d;
                         backface-visibility: hidden;
                       "
                     >
                       <img
-                        src="https://burningroom.co.id/assets/main/img/shape/circle-1.svg"
+                        src="./assets/main/img/shape/circle-1.svg"
                         alt="shape"
                         class="circle-shape-item type-5 hero-1"
                       />
@@ -2212,7 +2103,7 @@
                   </ul>
                   <div class="text-center">
                     <img
-                      src="https://burningroom.co.id/assets/files/beranda.png"
+                      src="./assets/files/beranda.png"
                       alt="hero image"
                       class="img-fluid position-relative z-5"
                       style="width: 500px"
@@ -2223,15 +2114,91 @@
             </div>
           </div>
         </section>
+
+        <section class="feature-tab-section pt-5 pb-5" id="about_company">
+          <div class="container">
+            <div class="row justify-content-center align-content-center">
+              <div class="col-md-10 col-lg-8">
+                <div class="section-heading text-center mb-3">
+                  <h4 class="h5 text-primary">-</h4>
+                  <h2>About Company</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 mt-3">
+              <div class="col-12 text-left">
+                <!-- <div class="text-left mb-3">
+                        <img src="./assets/files/services/bisnis.png" style="width: 110px;">
+                    </div> -->
+                <h5>
+                  SoftPro.One Solutions is an IT software house company that
+                  provides services, solutions, and innovative information
+                  technology products for small to large-scale applications and
+                  systems. By mastering many development tools such as web,
+                  mobile-based and desktop-based. We can provide an appropriate
+                  and integrated system and application solutions.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-tab-section pt-5 pb-5" id="vission_mission">
+          <div class="container">
+            <div class="row justify-content-center align-content-center">
+              <div class="col-md-10 col-lg-8">
+                <div class="section-heading text-center mb-3">
+                  <h4 class="h5 text-primary">-</h4>
+                  <h2>VISION AND MISSION</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3 mt-3">
+              <div class="col-6 text-left">
+                <!-- <div class="text-left mb-3">
+                        <img src="./assets/files/services/bisnis.png" style="width: 110px;">
+                    </div> -->
+                <h5>VISION</h5>
+                <p class="mb-0 text-dark">
+                  To become one of the best international scale companies in the
+                  field of IT Solutions and advance the national IT industry
+                  with international competitiveness.
+                </p>
+              </div>
+              <div class="col-6 text-left">
+                <!-- <div class="text-left mb-3">
+                        <img src="./assets/files/services/medis.png" style="width: 110px;">
+                    </div> -->
+                <h5>Mission</h5>
+                <p class="mb-0 text-dark">
+                  To achieve the company vision, SoftPro.One Solutions has the
+                  following company mission:
+                </p>
+                <ul>
+                  <li>Improve service and get client satisfaction.</li>
+                  <li>
+                    Expanding service types by increasing solution and service
+                    variants.
+                  </li>
+                  <li>
+                    Committed to continuing to provide education to the local
+                    market about the importance of using IT services and
+                    products in the future.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="feature-tab-section pt-5 pb-5">
           <div class="container">
             <div class="row justify-content-center align-content-center">
               <div class="col-md-10 col-lg-8">
                 <div class="section-heading text-center mb-3">
-                  <h4 class="h5 text-primary">Layanan</h4>
+                  <h4 class="h5 text-primary">-</h4>
                   <h2>
-                    Layanan Kami Yang Akan Menjadi Solusi Bagi Masalah
-                    Perusahaan Anda
+                    Our services will be the solution to your company's problems
                   </h2>
                 </div>
               </div>
@@ -2239,141 +2206,220 @@
             <div class="row g-3 mt-3">
               <div class="col-6 col-lg-3 text-center">
                 <div class="text-center mb-3">
-                  <img
-                    src="https://burningroom.co.id/assets/files/services/bisnis.png"
-                    style="width: 110px"
-                  />
+                  <img src="./asset/android.png" style="width: 110px" />
                 </div>
-                <h5>Jasa Pembuatan<br />Aplikasi ERP Bisnis</h5>
+                <h5>Mobile Android Development</h5>
                 <p class="mb-0 text-dark">
-                  Mulai dari Aplikasi ERP Perusahaan Jasa, Manufaktur, Aplikasi
-                  HR, dan banyak lagi.
+                  Revolutionize the mobile world with our Android development
+                  app! Unlock limitless potential, craft captivating user
+                  interfaces, and unleash powerful functionalities. Build your
+                  dream app and make your mark on the Play Store. Start coding
+                  your success story now with our intuitive and feature-packed
+                  Android development application!
                 </p>
-                <a
-                  href="/product/aplikasi-erp-bisnis-custom"
-                  target="_blank"
-                  class="btn btn-danger mt-3"
-                  >Lihat Detail</a
-                >
               </div>
               <div class="col-6 col-lg-3 text-center">
                 <div class="text-center mb-3">
-                  <img
-                    src="https://burningroom.co.id/assets/files/services/medis.png"
-                    style="width: 110px"
-                  />
+                  <img src="./asset/ios.png" style="width: 110px" />
                 </div>
-                <h5>Jasa Pembuatan<br />Aplikasi Medis</h5>
+                <h5>Mobile iOS Development</h5>
                 <p class="mb-0 text-dark">
-                  Mulai dari Aplikasi Klinik Kesehatan, Aplikasi Apotek, dan
-                  masih banyak lagi.
+                  Empower your iOS aspirations with our top-tier development
+                  app! Elevate your app-building journey with sleek designs,
+                  optimal performance, and seamless user experiences. Unleash
+                  the potential of iOS development and create apps that
+                  captivate the Apple ecosystem. Start coding your success story
+                  today with our intuitive and robust iOS development
+                  application!
                 </p>
-                <a
-                  href="/product/aplikasi-erp-medis-custom"
-                  class="btn btn-danger mt-3"
-                  >Lihat Detail</a
-                >
               </div>
               <div class="col-6 col-lg-3 text-center">
                 <div class="text-center mb-3">
-                  <img
-                    src="https://burningroom.co.id/assets/files/services/akademik.png"
-                    style="width: 110px"
-                  />
+                  <img src="./asset/web.png" style="width: 110px" />
                 </div>
-                <h5>Jasa Pembuatan<br />Aplikasi Akademik</h5>
+                <h5>Web Apps Development</h5>
                 <p class="mb-0 text-dark">
-                  Mulai dari Aplikasi Etik Penelitian, Aplikasi PMB, Aplikasi
-                  Sarpras, dan masih banyak lagi.
+                  Looking to build an impressive website or web app? Our
+                  cutting-edge web development application empowers you to
+                  create sleek, responsive designs with ease. Seamlessly
+                  integrate powerful features and bring your vision to life. Get
+                  started today and craft your digital masterpiece effortlessly!
                 </p>
-                <a
-                  href="/product/aplikasi-erp-akademik-custom"
-                  class="btn btn-danger mt-3"
-                  >Lihat Detail</a
-                >
               </div>
               <div class="col-6 col-lg-3 text-center">
                 <div class="text-center mb-3">
-                  <img
-                    src="https://burningroom.co.id/assets/files/services/pariwisata.png"
-                    style="width: 110px"
-                  />
+                  <img src="./asset/desktop.png" style="width: 110px" />
                 </div>
-                <h5>Jasa Pembuatan<br />Aplikasi Pariwisata</h5>
+                <h5>Desktop-Based Development</h5>
                 <p class="mb-0 text-dark">
-                  Mulai dari Aplikasi Pemasaran Pariwisata, Aplikasi Online
-                  Ticketing, dan masih banyak lagi.
+                  Empower your business with our professional desktop app
+                  development platform! Tailor-made for enterprises, our robust
+                  tool ensures seamless creation of efficient, secure, and
+                  scalable desktop applications. Elevate productivity,
+                  streamline operations, and enhance user engagement with
+                  customized software solutions. Harness the power of tailored
+                  desktop apps for your business success – start crafting your
+                  solution today!
                 </p>
-                <a
-                  href="/product/aplikasi-pemasaran-wisata-custom"
-                  class="btn btn-danger mt-3"
-                  >Lihat Detail</a
-                >
               </div>
             </div>
           </div>
         </section>
+
         <section
           class="integration-section pt-3 pb-5"
-          style="background-color: #fafafa"
+          style="
+            background-image: linear-gradient(
+              to right bottom,
+              #00145e,
+              #0036ff
+            );
+            box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.75);
+          "
+          id="portfolio"
         >
-          <div class="container">
+          <div
+            class="container"
+            style="
+              background-image: url(./assets/main/img/page-header-bg.svg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
             <div class="row align-items-center justify-content-lg-between">
               <div class="col-12">
                 <div
-                  class="section-heading text-center mb-5 aos-init"
+                  class="section-heading text-center mb-5"
                   data-aos="fade-up"
                 >
-                  <h4 class="h5 text-primary pt-3">Client</h4>
-                  <h2 class="mb-4">
-                    Brand Yang Sudah Bekerjasama<br />Dengan Kami
-                  </h2>
+                  <h4 class="h5 text-primary pt-3">-</h4>
+                  <h2 class="mb-4 text-white">Portfolio</h2>
                 </div>
               </div>
             </div>
-            <div class="row">
+
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" style="max-height: 500px">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/gilir1.png"
+                        class="d-block h-50"
+                        alt="amantara"
+                      />
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/gilir2.png"
+                        class="d-block h-50"
+                        alt="amantara"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/safe2trip1.png"
+                        class="d-block h-50"
+                        alt="safe2trip"
+                      />
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/safe2trip2.png"
+                        class="d-block h-50"
+                        alt="safe2trip2"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/parliamo1.jpg"
+                        class="d-block h-50"
+                        alt="parliamo"
+                      />
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/parliamo2.jpg"
+                        class="d-block h-50"
+                        alt="parliamo2"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/interanet1.png"
+                        class="d-block h-50"
+                        alt="safe2trip"
+                      />
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                      <img
+                        src="./asset/interanet2.png"
+                        class="d-block h-50"
+                        alt="safe2trip2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <div class="row">
               <div class="col-12">
                 <div class="integration-wrapper position-relative w-100">
                   <ul
                     class="position-absolute animate-element parallax-element shape-service z-1 d-none d-lg-none d-xl-block"
-                    style="
-                      transform: translate3d(0px, 0px, 0px);
-                      transform-style: preserve-3d;
-                      backface-visibility: hidden;
-                    "
                   >
-                    <li
-                      class="layer"
-                      data-depth="0.02"
-                      style="
-                        position: relative;
-                        display: block;
-                        left: 0px;
-                        top: 0px;
-                        transform: translate3d(0px, 0px, 0px);
-                        transform-style: preserve-3d;
-                        backface-visibility: hidden;
-                      "
-                    >
+                    <li class="layer" data-depth="0.02">
                       <img
                         src="assets/main/img/color-shape/feature-2.svg"
                         alt="shape"
                         class="img-fluid position-absolute color-shape-2 z-5"
                       />
                     </li>
-                    <li
-                      class="layer"
-                      data-depth="0.03"
-                      style="
-                        position: absolute;
-                        display: block;
-                        left: 0px;
-                        top: 0px;
-                        transform: translate3d(0px, 0px, 0px);
-                        transform-style: preserve-3d;
-                        backface-visibility: hidden;
-                      "
-                    >
+                    <li class="layer" data-depth="0.03">
                       <img
                         src="assets/main/img/color-shape/feature-3.svg"
                         alt="shape"
@@ -2382,58 +2428,78 @@
                     </li>
                   </ul>
                   <ul class="integration-list list-unstyled mb-0">
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/1. Tancorp.jpg"
-                          alt="PT. Tancorp Abadi Nusantara"
+                          src="./asset/amantara1.png"
+                          alt="amantara"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="./asset/amantara2.png"
+                          alt="amantara"
                           class="img-fluid"
                         />
                         <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
-                          PT. Tancorp Abadi Nusantara
+                          Amantara
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/5. Universitas Airlangga.jpg"
-                          alt="FKG Universitas Airlangga"
+                          src="./asset/bantubeli1.png"
+                          alt="bantubeli1"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="./asset/bantubeli2.png"
+                          alt="bantubeli2"
                           class="img-fluid"
                         />
                         <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
-                          FKG Universitas Airlangga
+                          Bantubeli
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/7gb8ng0uWgFb5SlQQI86QF5kbMxgkvSkYU2YAfOx.png"
-                          alt="PT. Athena Tagaya"
+                          src="./asset/cashier1.png"
+                          alt="cashier1"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="./asset/cashier2.png"
+                          alt="cashier2"
                           class="img-fluid"
                         />
                         <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
-                          PT. Athena Tagaya
+                          BantuBeli Cashier
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/YzjcTvCnXF2TN0Q5bR4pzxhYDoEs7q7J6aH781TU.png"
-                          alt="PT. Selaras Husada"
+                          src="./asset/driver1.png"
+                          alt="driver1"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="./asset/driver2.png"
+                          alt="driver2"
                           class="img-fluid"
                         />
                         <h6 class="mb-0 mt-2" style="font-size: 0.8rem">
-                          PT. Selaras Husada
+                          bantubeli driver
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/7. Beejay Chef.jpg"
+                          src="./storage/upload/partners/7. Beejay Chef.jpg"
                           alt="CV. Beejay Food"
                           class="img-fluid"
                         />
@@ -2442,10 +2508,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/6. Universitas Merdeka.jpg"
+                          src="./storage/upload/partners/6. Universitas Merdeka.jpg"
                           alt="Universitas Merdeka Malang"
                           class="img-fluid"
                         />
@@ -2454,10 +2520,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/2. PLTU Tanjung Jati.jpg"
+                          src="./storage/upload/partners/2. PLTU Tanjung Jati.jpg"
                           alt="PLTU Tanjung Jati B"
                           class="img-fluid"
                         />
@@ -2466,10 +2532,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/2BK8fvEG4ALaqFg3wID2ZPthBMyN9YgBpZ8zDNZA.png"
+                          src="./storage/upload/partners/2BK8fvEG4ALaqFg3wID2ZPthBMyN9YgBpZ8zDNZA.png"
                           alt="Starlife Medical Clinic"
                           class="img-fluid"
                         />
@@ -2478,10 +2544,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/4. Yayasan Kemala Bhayangkari.jpg"
+                          src="./storage/upload/partners/4. Yayasan Kemala Bhayangkari.jpg"
                           alt="Yayasan Kemala Bhayangkari"
                           class="img-fluid"
                         />
@@ -2490,10 +2556,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/3. AIM Biscuits.jpg"
+                          src="./storage/upload/partners/3. AIM Biscuits.jpg"
                           alt="AIM Biscuits"
                           class="img-fluid"
                         />
@@ -2502,10 +2568,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/8. X Trans Logistik.jpg"
+                          src="./storage/upload/partners/8. X Trans Logistik.jpg"
                           alt="X Trans Logistik"
                           class="img-fluid"
                         />
@@ -2514,10 +2580,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/9. DPRD Kab.Gresik.jpg"
+                          src="./storage/upload/partners/9. DPRD Kab.Gresik.jpg"
                           alt="DPRD Kab.Gresik"
                           class="img-fluid"
                         />
@@ -2526,10 +2592,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/10. DPRD Kab.Tulungagung.jpg"
+                          src="./storage/upload/partners/10. DPRD Kab.Tulungagung.jpg"
                           alt="DPRD Kab.Tulungagung"
                           class="img-fluid"
                         />
@@ -2538,10 +2604,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/11. DPRD Kota Batu.jpg"
+                          src="./storage/upload/partners/11. DPRD Kota Batu.jpg"
                           alt="DPRD Kota Batu"
                           class="img-fluid"
                         />
@@ -2550,10 +2616,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/12. Pemda Kab.Gresik.jpg"
+                          src="./storage/upload/partners/12. Pemda Kab.Gresik.jpg"
                           alt="Pemda Kab.Gresik"
                           class="img-fluid"
                         />
@@ -2562,10 +2628,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/13. Pemda Kab.Sidoarjo.jpg"
+                          src="./storage/upload/partners/13. Pemda Kab.Sidoarjo.jpg"
                           alt="Pemda Kab.Sidoarjo"
                           class="img-fluid"
                         />
@@ -2574,10 +2640,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/14. Pemda Kab.Tulungagung.jpg"
+                          src="./storage/upload/partners/14. Pemda Kab.Tulungagung.jpg"
                           alt="Pemda Kab.Tulungagung"
                           class="img-fluid"
                         />
@@ -2586,10 +2652,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/15. Pemda Kab.Kediri.jpg"
+                          src="./storage/upload/partners/15. Pemda Kab.Kediri.jpg"
                           alt="Pemda Kab.Kediri"
                           class="img-fluid"
                         />
@@ -2598,10 +2664,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/16. Pemda Kab.Pasuruan.jpg"
+                          src="./storage/upload/partners/16. Pemda Kab.Pasuruan.jpg"
                           alt="Pemda Kab.Pasuruan"
                           class="img-fluid"
                         />
@@ -2610,10 +2676,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/17. Pemda Kab.Lamongan.jpg"
+                          src="./storage/upload/partners/17. Pemda Kab.Lamongan.jpg"
                           alt="Pemda Kab.Lamongan"
                           class="img-fluid"
                         />
@@ -2622,10 +2688,10 @@
                         </h6>
                       </div>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="50" class="aos-init">
+                    <li data-aos="fade-up" data-aos-delay="50">
                       <div class="single-integration">
                         <img
-                          src="https://burningroom.co.id/storage/upload/partners/18. Pemda Kab.Sumenep.jpg"
+                          src="./storage/upload/partners/18. Pemda Kab.Sumenep.jpg"
                           alt="Pemda Kab.Sumenep"
                           class="img-fluid"
                         />
@@ -2637,12 +2703,12 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
       </div>
 
-      <!-- Livewire Component wire-end:HaJjAmNJHg3GvhRbbJNV -->
+      <!-- Livewire Component wire-end:bKR9BJ4fMZ25fD9mLqFQ -->
 
       <!--footer section start-->
       <footer class="footer-section">
@@ -2651,8 +2717,8 @@
         <div
           class="footer-top bg-dark text-white ptb-60"
           style="
-            background: url(https://burningroom.co.id/assets/main/img/page-header-bg.svg)
-              no-repeat bottom right;
+            background: url(./assets/main/img/page-header-bg.svg) no-repeat
+              bottom right;
           "
         >
           <div class="container">
@@ -2661,35 +2727,37 @@
                 <div class="footer-single-col">
                   <div class="footer-single-col mb-4">
                     <img
-                      src="https://burningroom.co.id/assets/files/logo/Logo BR - Dark Blue - Footer.png"
+                      src="./asset/Logo_SP-removebg-preview-white.png"
                       alt="logo"
                       class="img-fluid logo-white"
                     />
                     <img
-                      src="https://burningroom.co.id/assets/files/logo/Logo BR - Dark Blue - Footer.png"
+                      src="./asset/Logo_SP-removebg-preview-white.png"
                       alt="logo"
                       class="img-fluid logo-color"
                     />
                   </div>
-                  <p>
-                    Ruko Palacio B-23 Lt. 1 - 3, Jl. Nginden Semolo 42, Kec.
-                    Sukolilo, Kota Surabaya - Jawa Timur 60118
-                  </p>
+                  <p>-</p>
                 </div>
               </div>
               <div
                 class="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0 offset-0 offset-md-1"
               >
-                <iframe
-                  class="h-100 w-100 rounded-custom shadow"
-                  id="gmap_canvas"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4759610874175!2d112.76379097610459!3d-7.300300371767804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa539bffda91%3A0x8c06a1ed3c8b8288!2sBurningroom%20Technology!5e0!3m2!1sid!2sid!4v1675155655687!5m2!1sid!2sid"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                  loading="lazy"
-                ></iframe>
+                <div class="row">
+                  <div class="col-md-auto">
+                    <p>carrier</p>
+                    <p>career@espeone.com</p>
+                  </div>
+                  <div class="col-md-auto">
+                    <p>Term and Condition</p>
+                    <p>-</p>
+                  </div>
+                  <div class="col-md-auto">
+                    <p>Sosial Media</p>
+                    <p>Instagram</p>
+                  </div>
+                </div>
+                <!-- <iframe class="h-100 w-100 rounded-custom shadow" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4759610874175!2d112.76379097610459!3d-7.300300371767804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa539bffda91%3A0x8c06a1ed3c8b8288!2sBurningroom%20Technology!5e0!3m2!1sid!2sid!4v1675155655687!5m2!1sid!2sid" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy"></iframe> -->
               </div>
             </div>
           </div>
@@ -2702,10 +2770,7 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-12">
                 <div class="copyright-text text-center">
-                  <p class="mb-lg-0 mb-md-0">
-                    © 2023 Burningroom Technology. All Rights Reserved. Made
-                    with Full of Passion!
-                  </p>
+                  <p class="mb-lg-0 mb-md-0">-</p>
                 </div>
               </div>
             </div>
@@ -2715,6 +2780,8 @@
       </footer>
       <!--footer section end-->
     </div>
+    <!-- Livewire Scripts -->
+
     <!-- Livewire Scripts -->
 
     <script
@@ -2778,12 +2845,12 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <script src="https://burningroom.co.id/assets/main/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="https://burningroom.co.id/assets/main/js/vendors/swiper-bundle.min.js"></script>
-    <script src="https://burningroom.co.id/assets/main/js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="https://burningroom.co.id/assets/main/js/vendors/parallax.min.js"></script>
-    <script src="https://burningroom.co.id/assets/main/js/vendors/aos.js"></script>
-    <script src="https://burningroom.co.id/assets/main/js/app.js"></script>
+    <script src="./assets/main/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="./assets/main/js/vendors/swiper-bundle.min.js"></script>
+    <script src="./assets/main/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/main/js/vendors/parallax.min.js"></script>
+    <script src="./assets/main/js/vendors/aos.js"></script>
+    <script src="./assets/main/js/app.js"></script>
     <!--endbuild-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Start of Tawk.to Script-->
@@ -3029,5 +3096,6 @@
       ></iframe>
       <div id="chat-bubble"></div>
     </div>
+    <div id="root"></div>
   </body>
 </html>
